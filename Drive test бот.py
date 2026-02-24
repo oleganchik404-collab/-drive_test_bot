@@ -7,7 +7,8 @@ from aiogram.fsm.context import FSMContext
 from aiogram.fsm.storage.memory import MemoryStorage
 
 # ====== Налаштування ======
-BOT_TOKEN = "7865359149:AAERvVmd4q8UN-JFNg3wfgiQAtt5fXKhLA8"
+import os 
+BOT_TOKEN = os.getenv("7865359149:AAERvVmd4q8UN-JFNg3wfgiQAtt5fXKhLA8")
 GROUP_ID = -1003507718905  # встав ID вашої групи
 
 bot = Bot(token=BOT_TOKEN)
@@ -110,3 +111,4 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
